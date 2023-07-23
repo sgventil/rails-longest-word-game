@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+.container {
+  margin-top: 50px;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container h1 {
+  font-size: 64px;
+}
+
+.blue-cube {
+  display: inline-block;
+  justify-items: left;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(4, 118, 208);
+  margin: 4px 4px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+.form-group {
+margin-top: 25px;
+}
