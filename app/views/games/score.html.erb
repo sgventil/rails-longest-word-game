@@ -1,0 +1,16 @@
+<h1>Results!</h1>
+
+<% if @can_be_composed %>
+  <% if @repos['found'] %>
+    Congratulations!!! <strong><%= @repos['word'] %></strong> is an English Word!!!<br>
+  <% else %>
+    Sorry, but <strong><%= @word %></strong> does not seem to be a valid English Word!!!<br>
+  <% end %>
+<% else %>
+  Sorry, but <strong><%= @word %></strong> can't be composed out of <%= @letters %>.<br>
+<% end %>
+
+<h3>Score: <%= @score %></h3><br>
+<h3> Total Score: <%=  @total_score %></h3><br>
+
+<%= link_to("Play again", new_path, style: "text-decoration: none;") %>
